@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package RestTest.service;
+package web.service;
 
-import RestTest.Zwierzaki;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -18,15 +17,16 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import web.Zwierzaki;
 
 /**
  *
  * @author KN
  */
 @Stateless
-@Path("resttest.zwierzaki")
+@Path("web.zwierzaki")
 public class ZwierzakiFacadeREST extends AbstractFacade<Zwierzaki> {
-    @PersistenceContext(unitName = "AppPU")
+    @PersistenceContext(unitName = "AppkaPU")
     private EntityManager em;
 
     public ZwierzakiFacadeREST() {

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package RestTest;
+package web;
 
 import java.io.Serializable;
 import javax.persistence.Basic;
@@ -84,7 +84,7 @@ public class Zwierzaki implements Serializable {
 
     @Override
     public String toString() {
-        return "RestTest.Zwierzaki[ id=" + id + " ]";
+        return "web.Zwierzaki[ id=" + id + " ]";
     }
     
 }
